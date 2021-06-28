@@ -1,0 +1,78 @@
+.board table, .board {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+body {
+  background: radial-gradient(129.18% 129.18% at 52.48% -24.05%, #E7E5EB 0%, #554797 100%);
+  min-height: 100vh;
+  padding: 40px 15px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.globe2 {
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.globe1 {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+.globe3 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.board {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 800px;
+  background-color: black;
+  margin: 0 auto;
+  background-color: rgba(21, 23, 113, 0.4);
+  padding: 60px;
+  border: 5px solid #F841A6;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 30px;
+}
+.board .title {
+  color: #F841A6;
+}
+.board table {
+  margin: 70px auto 0;
+}
+.board table tr td {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+.board table tr td .x {
+  color: #F841A6;
+}
+.board table tr td .o {
+  color: #59DEFF;
+}
+.board table tr:nth-child(1n) td:nth-child(1n) {
+  background-color: #DFE0FE;
+}
+.board table tr:nth-child(1n) td:nth-child(2n) {
+  background-color: white;
+}
+.board table tr:nth-child(2n) td:nth-child(1n) {
+  background-color: white;
+}
+.board table tr:nth-child(2n) td:nth-child(2n) {
+  background-color: #DFE0FE;
+}
+
+/*# sourceMappingURL=style.css.map */
